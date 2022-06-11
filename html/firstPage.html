@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="sortcut icon" type="images/svg" href="../images/icon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/firstPage.css">
+    <title>Pets</title>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="../index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Главная </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../index.html">
+                        <span class="icon">
+                            <ion-icon name="apps-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Каталог </span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="firstPage.html">
+                        <span class="icon">
+                            <ion-icon name="duplicate-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Добавить животное </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="secondPage.html">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="text"> Полезно и интересно </span>
+                    </a>
+                </li>
+                
+                <div class="indicator"></div>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="flexbox">
+                <a href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
+                <nav>
+                    <a href="../index.html">Каталог животных</a>
+                    <a href="firstPage.html">Добавить животное</a>
+                    <a href="secondPage.html">Полезно и интересно</a>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img class="first_elipce" src="../images/Ellipse 7.svg" alt="elipce 1">
+        <img class="second_elipce" src="../images/Ellipse 6.svg" alt="elipce 2">
+        <img class="third_elipce" src="../images/Ellipse 8.svg" alt="elipce 3">
+        <div class="container">
+            <h1 class="addForm">Форма добавления животного</h1>
+            <div class="name_form">
+                <h3>Кличка</h3>
+                <input typfe="text">
+            </div>
+            <div class="second-name_form">
+                <h3>Название приюта</h3>
+                <input type="text">
+            </div>
+            <div class="location_form">
+                <h3>Месторасположение</h3>
+                <input type="text">
+            </div>
+            <div class="filters">
+                <div class="kind">
+                    <h3>Вид животного:</h3>
+                    <label for="dog">
+                         <input id="dog" type="radio" class="radio" name="kindPet">
+                         <span class="fake"></span>
+                         <span class="text">Собака</span>
+                    </label>
+                    <label for="cat"> 
+                        <input id="cat" type="radio" class="radio" name="kindPet"> 
+                        <span class="fake"></span>
+                        <span class="text" id="finaly">Кошка</span>
+                    </label>
+                </div>
+                <div class="pol">
+                    <h3>Пол:</h3>
+                    <label for="man">
+                         <input id="man" type="radio" class="radio" name="pol">
+                         <span class="fake"></span>
+                         <span class="text">Самец</span>
+                    </label>
+                    <label for="woman"> 
+                        <input id="woman" type="radio" class="radio" name="pol"> 
+                        <span class="fake"></span>
+                        <span class="text" id="finaly">Самка</span>
+                    </label>
+                </div>
+                <div class="colorOfPet">
+                    <h3>Расцветки:</h3>
+                    <div class="firstRow">
+                        <label for="black">
+                            <input id="black" type="radio" class="radio" name="colorOfPet">
+                            <span class="fake"></span>
+                            <span class="text">Черный</span>
+                        </label>
+                        <label for="brown"> 
+                            <input id="brown" type="radio" class="radio" name="colorOfPet"> 
+                            <span class="fake"></span>
+                            <span class="text brow">Коричневый</span>
+                        </label>
+                    </div>
+                    <div class="secondRow">
+                        <label for="rizhy">
+                            <input id="rizhy" type="radio" class="radio" name="colorOfPet">
+                            <span class="fake"></span>
+                            <span class="text">Рыжий</span>
+                    </label>
+                    <label for="white"> 
+                        <input id="white" type="radio" class="radio" name="colorOfPet"> 
+                        <span class="fake"></span>
+                        <span class="text" id="finaly">Белый</span>
+                    </label>
+                    </div>
+                </div>
+            </div>
+            <div class="coment">
+                <textarea placeholder="Добавить описание..." name="opisaine"></textarea>
+            </div>
+            <div class="photo">
+                <div class="addPhoto" name="addPhoto">
+                    <p>Добавить фото</p>
+                </div>
+                <div class="choosePicture">
+                    <p>Перетащите файл в эту облость</p>
+                </div>
+            </div>
+            <div class="send">
+                <p name="sendPhoto">Отправить</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_logo">
+                <a href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/firstPage2.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
