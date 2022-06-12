@@ -741,11 +741,15 @@ footer {
     .firstRow, .secondRow {
         width: 345px;
     }
+    
+    header .navigation .indicator {
+        left: 16%;
+    }
 }
 
 @media(max-width: 384px) {
     header .navigation .indicator {
-        left: 4.8%;
+        left: 15.4%;
     }
 }
 
@@ -771,25 +775,25 @@ footer {
     }
 
     header .navigation .indicator {
-        left: 3.8%;
+        left: 14.5%;
     }
 }
 
 @media(max-width: 360px) {
     header .navigation .indicator {
-        left: 1.8%;
+        left: 12.8%;
     }
 }
 
 @media(max-width: 353px) {
     header .navigation .indicator {
-        left: .8%;
+        left: 12%;
     }
 }
 
 @media(max-width: 320px) {
     header .navigation .indicator {
-        left: -0.6%;
+        left: 10.4%;
     }
 
     header .navigation ul {
